@@ -10,10 +10,12 @@
 		87E060261A48EE9C007F24D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E060251A48EE9C007F24D6 /* main.m */; };
 		87E060291A48EE9C007F24D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E060281A48EE9C007F24D6 /* AppDelegate.m */; };
 		87E0602C1A48EE9C007F24D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E0602B1A48EE9C007F24D6 /* ViewController.m */; };
-		87E0602F1A48EE9C007F24D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E0602D1A48EE9C007F24D6 /* Main.storyboard */; };
 		87E060311A48EE9C007F24D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E060301A48EE9C007F24D6 /* Images.xcassets */; };
-		87E060341A48EE9C007F24D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E060321A48EE9C007F24D6 /* LaunchScreen.xib */; };
 		87E060401A48EE9C007F24D6 /* WeatherlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E0603F1A48EE9C007F24D6 /* WeatherlyTests.m */; };
+		87E060501A48EF70007F24D6 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E0604F1A48EF70007F24D6 /* UserLocationManager.m */; };
+		87E060571A48F06E007F24D6 /* CustomActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E060561A48F06E007F24D6 /* CustomActivityIndicator.m */; };
+		87EF53ED1A4967A4008E3DC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87EF53E91A4967A4008E3DC3 /* LaunchScreen.xib */; };
+		87EF53EE1A4967A4008E3DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EF53EB1A4967A4008E3DC3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,16 @@
 		87E060281A48EE9C007F24D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		87E0602A1A48EE9C007F24D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		87E0602B1A48EE9C007F24D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		87E0602E1A48EE9C007F24D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87E060301A48EE9C007F24D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		87E060331A48EE9C007F24D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		87E060391A48EE9C007F24D6 /* WeatherlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E0603E1A48EE9C007F24D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87E0603F1A48EE9C007F24D6 /* WeatherlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherlyTests.m; sourceTree = "<group>"; };
+		87E0604F1A48EF70007F24D6 /* UserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
+		87E060511A48EF85007F24D6 /* UserLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
+		87E060551A48F06E007F24D6 /* CustomActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivityIndicator.h; sourceTree = "<group>"; };
+		87E060561A48F06E007F24D6 /* CustomActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivityIndicator.m; sourceTree = "<group>"; };
+		87EF53EA1A4967A4008E3DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Weatherly/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		87EF53EC1A4967A4008E3DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weatherly/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		87E060171A48EE9C007F24D6 = {
 			isa = PBXGroup;
 			children = (
+				87EF53E91A4967A4008E3DC3 /* LaunchScreen.xib */,
+				87EF53EB1A4967A4008E3DC3 /* Main.storyboard */,
 				87E060221A48EE9C007F24D6 /* Weatherly */,
 				87E0603C1A48EE9C007F24D6 /* WeatherlyTests */,
 				87E060211A48EE9C007F24D6 /* Products */,
@@ -83,11 +91,13 @@
 			children = (
 				87E060271A48EE9C007F24D6 /* AppDelegate.h */,
 				87E060281A48EE9C007F24D6 /* AppDelegate.m */,
+				87E060511A48EF85007F24D6 /* UserLocationManager.h */,
+				87E0604F1A48EF70007F24D6 /* UserLocationManager.m */,
+				87E060551A48F06E007F24D6 /* CustomActivityIndicator.h */,
+				87E060561A48F06E007F24D6 /* CustomActivityIndicator.m */,
 				87E0602A1A48EE9C007F24D6 /* ViewController.h */,
 				87E0602B1A48EE9C007F24D6 /* ViewController.m */,
-				87E0602D1A48EE9C007F24D6 /* Main.storyboard */,
 				87E060301A48EE9C007F24D6 /* Images.xcassets */,
-				87E060321A48EE9C007F24D6 /* LaunchScreen.xib */,
 				87E060231A48EE9C007F24D6 /* Supporting Files */,
 			);
 			path = Weatherly;
@@ -199,8 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87E0602F1A48EE9C007F24D6 /* Main.storyboard in Resources */,
-				87E060341A48EE9C007F24D6 /* LaunchScreen.xib in Resources */,
+				87EF53EE1A4967A4008E3DC3 /* Main.storyboard in Resources */,
+				87EF53ED1A4967A4008E3DC3 /* LaunchScreen.xib in Resources */,
 				87E060311A48EE9C007F24D6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +232,8 @@
 				87E0602C1A48EE9C007F24D6 /* ViewController.m in Sources */,
 				87E060291A48EE9C007F24D6 /* AppDelegate.m in Sources */,
 				87E060261A48EE9C007F24D6 /* main.m in Sources */,
+				87E060571A48F06E007F24D6 /* CustomActivityIndicator.m in Sources */,
+				87E060501A48EF70007F24D6 /* UserLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +256,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87E0602D1A48EE9C007F24D6 /* Main.storyboard */ = {
+		87EF53E91A4967A4008E3DC3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				87E0602E1A48EE9C007F24D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		87E060321A48EE9C007F24D6 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87E060331A48EE9C007F24D6 /* Base */,
+				87EF53EA1A4967A4008E3DC3 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		87EF53EB1A4967A4008E3DC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87EF53EC1A4967A4008E3DC3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +426,7 @@
 				87E060451A48EE9C007F24D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87E060461A48EE9C007F24D6 /* Build configuration list for PBXNativeTarget "WeatherlyTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				87E060481A48EE9C007F24D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

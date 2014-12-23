@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="YZ5-ov-rhA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7N-HQ-Lvk" customClass="CustomActivityIndicator">
+                                <rect key="frame" x="280" y="540" width="40" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-Ff-QOy">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="snowflake">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BTX-A8-T3E"/>
+                                    <constraint firstAttribute="width" constant="40" id="GBy-mv-YWU"/>
+                                    <constraint firstAttribute="trailing" secondItem="BIX-Ff-QOy" secondAttribute="trailing" id="PoB-ba-klt"/>
+                                    <constraint firstItem="BIX-Ff-QOy" firstAttribute="top" secondItem="S7N-HQ-Lvk" secondAttribute="top" id="Qou-Jn-fbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="BIX-Ff-QOy" secondAttribute="bottom" id="Tor-9M-KEa"/>
+                                    <constraint firstItem="BIX-Ff-QOy" firstAttribute="leading" secondItem="S7N-HQ-Lvk" secondAttribute="leading" id="b0u-4W-QdL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHK-C4-p6z">
+                                <rect key="frame" x="0.0" y="80" width="600" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-kB-irs">
+                                <rect key="frame" x="16" y="371" width="568" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UB-Jk-BJg">
+                                <rect key="frame" x="0.0" y="183" width="600" height="180"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EkE-kB-irs" firstAttribute="top" secondItem="6UB-Jk-BJg" secondAttribute="bottom" constant="8" id="9iL-hL-y23"/>
+                            <constraint firstAttribute="centerX" secondItem="S7N-HQ-Lvk" secondAttribute="centerX" id="Blp-oA-UuY"/>
+                            <constraint firstItem="YZ5-ov-rhA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ch1-Bu-dCd"/>
+                            <constraint firstItem="6UB-Jk-BJg" firstAttribute="top" secondItem="XHK-C4-p6z" secondAttribute="bottom" constant="8" id="HTC-6g-vj0"/>
+                            <constraint firstItem="6UB-Jk-BJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K6x-YU-BAi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EkE-kB-irs" secondAttribute="trailing" id="LN5-Kn-Rs5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S7N-HQ-Lvk" secondAttribute="bottom" constant="20" id="P0H-sS-Tb6"/>
+                            <constraint firstAttribute="trailing" secondItem="XHK-C4-p6z" secondAttribute="trailing" id="QkR-gE-wWz"/>
+                            <constraint firstItem="XHK-C4-p6z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="UOD-li-drW"/>
+                            <constraint firstItem="EkE-kB-irs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V1g-TB-Q0b"/>
+                            <constraint firstAttribute="trailing" secondItem="YZ5-ov-rhA" secondAttribute="trailing" id="YHr-eK-iCf"/>
+                            <constraint firstAttribute="centerX" secondItem="EkE-kB-irs" secondAttribute="centerX" id="bor-b2-L6C"/>
+                            <constraint firstAttribute="trailing" secondItem="6UB-Jk-BJg" secondAttribute="trailing" id="fNJ-KL-6Sn"/>
+                            <constraint firstAttribute="centerX" secondItem="XHK-C4-p6z" secondAttribute="centerX" id="lOU-j7-6sX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YZ5-ov-rhA" secondAttribute="bottom" id="t0t-dC-Vq6"/>
+                            <constraint firstItem="YZ5-ov-rhA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uhQ-fp-IZa"/>
+                            <constraint firstItem="XHK-C4-p6z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vEW-5q-hAi"/>
+                            <constraint firstAttribute="centerX" secondItem="6UB-Jk-BJg" secondAttribute="centerX" id="vSf-m9-k9d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customActivityView" destination="S7N-HQ-Lvk" id="JO0-sT-oxP"/>
+                        <outlet property="forecastLabel" destination="EkE-kB-irs" id="dP2-UA-DN1"/>
+                        <outlet property="temperatureLabel" destination="6UB-Jk-BJg" id="I55-42-88o"/>
+                        <outlet property="townLabel" destination="XHK-C4-p6z" id="XzU-Tf-2Gg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="960" height="600"/>
+        <image name="snowflake" width="32" height="32"/>
+    </resources>
 </document>
